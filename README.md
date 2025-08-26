@@ -26,6 +26,10 @@ pagina_proyecto_predictor_vocacional/
 
 │── templates/ # Vistas HTML (index, encuesta, respuestas)
 
+│── static/ # Archivos estáticos (CSS, JS, imágenes)
+
+│── .venv/ # Entorno virtual (opcional)
+
 ## Modelo
 
 El modelo está entrenado para recomendar afinidad con las siguientes carreras:
@@ -39,6 +43,3 @@ El modelo está entrenado para recomendar afinidad con las siguientes carreras:
 ## Autores
 - Michael Forero Pachon
 - Adriana Valentina Suarez Cañon
-
-│── static/ # Archivos estáticos (CSS, JS, imágenes)
-│── .venv/ # Entorno virtual (opcional)
