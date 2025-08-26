@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Predictor carrerras universitarias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+
+
+</head>
+<body>
+    <div class="header">
+        <h1>
+        Descubre Tu <span class ="verde">Camino</span>
+        <br>
+        <span class="verde">Profesional</span>
+        </h1>   
+    <h2>Nuestra encuesta vocacional te ayudara a identificar tus intereses y habilidades para<br> encontrar la carrera ideal para ti</h2>
+    </div>
+
+    <div class ="interesados">
+        <div class="bloque">
+            <h2>Beneficios</h2>
+            <ul class="lista_checks">
+                <li>Descubre tus verdaderos intereses profesionales </li>
+                <li>Explora carreras que se alinean con tu personalidad</li>
+                <li>Obten orientacion para tu futuro academico</li>
+            </ul>
+        </div>
+        <div class="bloque">
+            <h2>¿Para quien es?</h2>
+            <ul class="lista_checks">
+                <li>Estudiantes que estan por elegir una carrera </li>
+                <li>Personas que quieren confirmar su eleccion profesional  </li>
+                <li>Cualquier interesado en identificar carreras afines de sus fortalezas y habilidades</li>
+               
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="como_funciona_contenedor">
+        <h2>¿Cómo funciona?</h2>
+        <div class="pasos">
+
+            <div class="paso">
+                <div class="paso_numero">1</div>
+                <h3>Responde las preguntas</h3>
+                <p>Contesta una serie de<br>
+                preguntas sobre tus<br>
+                intereses y preferencias</p>
+            </div>
+
+            <div class="paso">
+                <div class="paso_numero">2</div>
+                <h3>Analisis de perfil</h3>
+                <p>Nuestro sistema analiza tus<br>
+                respuestas para crear un<br>
+                 perfil personalizado</p>
+                
+            </div>
+
+            <div class="paso">
+                <div class="paso_numero">3</div>
+                <h3>Recomendaciones</h3>
+                <p> Obten recomendaciones de<br>
+                carreras que se alinean con<br>
+                tus intereses y preferencias</p>
+                
+            </div>
+        </div>
+        <div class="boton_encuesta">
+            <a href="{{ url_for('encuesta')}}"><p>Comenzar Encuesta</p></a>
+    </div>
+    </div>
+
+
+    
+
+</body>
+</html>

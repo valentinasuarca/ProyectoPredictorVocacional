@@ -1,0 +1,72 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.encuesta-contenedor {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.barra-progreso {
+  margin-bottom: 20px;
+}
+
+.barra {
+  height: 8px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progreso {
+  height: 100%;
+  background: #222;
+  width: 10%;
+  transition: width 0.3s ease;
+}
+
+form label {
+  display: block;
+  margin: 12px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form label:hover {
+  background: #f0f0f0;
+}
+
+.botones {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00a376;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #eee;
+  color: #aaa;
+  cursor: default;
+}
+
+

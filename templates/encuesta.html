@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta Vocacional</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos_encuesta.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+
+</head>
+<body data-procesar-url="{{ url_for('procesar_encuesta_endpoint') }}">
+  <div class="encuesta-contenedor">
+    <h1>Encuesta Vocacional</h1>
+
+    <!-- Progreso -->
+    <div class="barra-progreso">  
+      <span>Pregunta <span id="numeroPregunta">1</span> de 10</span>
+      <div class="barra">
+        <div class="progreso" style="width: 10%;"></div>
+      </div>
+    </div>
+
+    <!-- Pregunta -->
+    <div class="pregunta">
+      <h2></h2>
+      <form id="formulario">
+        <label><input type="radio" name="respuesta" value="1"> </label>
+        <label><input type="radio" name="respuesta" value="2"> </label>
+        <label><input type="radio" name="respuesta" value="3"> <label>
+        <label><input type="radio" name="respuesta" value="4"> </label>
+        <label><input type="radio" name="respuesta" value="5"> </label>
+      </form>
+    </div>
+    
+    <!-- Botones -->
+    <div class="botones">
+      <button id="anterior" disabled>Anterior</button>
+      <button id="siguiente">Siguiente</button>
+      
+      <a id="Finalizar" href="#" class="botones" style="display: none;">Finalizar</a>
+  </div>
+
+
+  <script src="{{ url_for('static', filename='script_encuesta.js') }}"></script>
+</body>
+</html>

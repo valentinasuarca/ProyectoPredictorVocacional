@@ -1,0 +1,178 @@
+    
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #ffffff;
+        color: #1a1a1a;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #6b7280;
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+      }
+
+      .results-box {
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 30px;
+        background-color: #f9fafb;
+        margin-bottom: 30px;
+      }
+
+      .profile-title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+
+      .profile-subtitle {
+        color: #6b7280;
+        margin-bottom: 30px;
+      }
+
+      /* Barras de progreso */
+      .skill-area {
+        margin-bottom: 20px;
+      }
+
+      .skill-name {
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .skill-percent {
+        text-align: right;
+      }
+
+      .progress-bar-bg {
+        height: 12px;
+        background-color: #f0f0f0;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+
+      .progress-bar {
+        height: 100%;
+        background-color: #000;
+        border-radius: 6px;
+      }
+
+      /* Área principal */
+      .main-area {
+        background-color: #ecfdf5;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 30px;
+      }
+
+      .area-title {
+        color: #047857;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+      }
+
+      .area-description {
+        color: #6b7280;
+        margin-bottom: 20px;
+      }
+
+      /* Carreras */
+      .careers-title {
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .careers-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
+      .career-item {
+        background-color: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 15px;
+      }
+
+      .career-item ul {
+        padding-left: 20px;
+        margin: 0;
+      }
+
+      .career-item li {
+        color: #10b981;
+        margin-bottom: 5px;
+      }
+
+      .career-item li span {
+        color: #1a1a1a;
+      }
+
+      /* Área secundaria */
+      .secondary-area {
+        background-color: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 30px;
+      }
+
+      /* Botones */
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .btn {
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+      }
+
+      .btn-outline {
+        background-color: #fff;
+        border: 1px solid #d1d5db;
+        color: #4b5563;
+      }
+
+      .btn-primary {
+        background-color: #10b981;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background-color: #059669;
+      }
+
+      .btn-outline:hover {
+        background-color: #f9fafb;
+      }
+    

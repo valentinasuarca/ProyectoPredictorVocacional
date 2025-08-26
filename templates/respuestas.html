@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultados de Tu Encuesta Vocacional</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos_respuestas.css') }}" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tus Resultados</h1>
+      <p class="subtitle">
+        Basado en tus respuestas, hemos identificado las áreas profesionales que
+        mejor se alinean con tus intereses y habilidades.
+      </p>
+
+      <!-- Sección 1: Resultados generales -->
+      <div class="results-box">
+        <h2 class="profile-title">Tu Perfil Vocacional</h2>
+        <p class="profile-subtitle">
+          Estos son los resultados de tu encuesta, ordenados por afinidad.
+        </p>
+
+        <div class="skill-area">
+          <div class="skill-name">
+            <span>Ingeniería de Sistemas</span>
+            <span class="skill-percent">60%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar" style="width: 60%"></div>
+          </div>
+        </div>
+
+        <div class="skill-area">
+          <div class="skill-name">
+            <span>Ingeniería Mecatrónica</span>
+            <span class="skill-percent">20%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar" style="width: 20%"></div>
+          </div>
+        </div>
+
+        <div class="skill-area">
+          <div class="skill-name">
+            <span>Ingeniería Química</span>
+            <span class="skill-percent">10%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar" style="width: 10%"></div>
+          </div>
+        </div>
+
+        <div class="skill-area">
+          <div class="skill-name">
+            <span>Lenguas Modernas</span>
+            <span class="skill-percent">10%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar" style="width: 10%"></div>
+          </div>
+        </div>
+
+        <div class="skill-area">
+          <div class="skill-name">
+            <span>Mercadeo y estrategia comercial</span>
+            <span class="skill-percent">0%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 2: Área principal -->
+      <div class="main-area">
+        <h2 class="area-title">Tu Área Principal: Ingeniería</h2>
+        <p class="area-description">
+          Posees un interés genuino en la expresión creativa para la solución de
+          problemas, la comunicación clara y persuasiva de tus ideas
+        </p>
+
+        <div class="careers-title">Perfil Ocupacional:</div>
+        <div class="careers-grid">
+          <div class="career-item">
+            <ul>
+              <li>Gerencia o dirección de sistemas</li>
+            </ul>
+          </div>
+
+          <div class="career-item">
+            <ul>
+              <li>Gerencia de desarrollo de software.</li>
+            </ul>
+          </div>
+
+          <div class="career-item">
+            <ul>
+              <li>Gerencia de proyectos.</li>
+            </ul>
+
+          </div>
+                    <div class="career-item">
+            <ul>
+              <li>Consultoría de sistemas (ingeniería de software, ciencias de la computación, redes y comunicaciones).</li>
+            </ul>
+          </div>
+
+          <div class="career-item">
+            <ul>
+              <li>Investigación para el desarrollo de tecnología.</li>
+            </ul>
+          </div>
+          <div class="career-item">
+            <ul>
+              <li>Asesoría en el sector informático, en técnicas de software y diseño y mejoramiento de productos a nivel empresarial, gremial o nacional.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 3: Área secundaria -->
+      <div class="secondary-area">
+        <h2 class="area-title">Área Secundaria: Humanidades</h2>
+        <p class="area-description">
+          Su estudio se centra en la comprensión de las lenguas en su contexto
+          cultural, literario, histórico y social.
+        </p>
+
+        <div class="careers-title">Perfil Ocupacional:</div>
+        <div class="careers-grid">
+          <div class="career-item">
+            <ul>
+              <li>Lenguas Modernas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botones -->
+      <div class="buttons">
+        <a href ="{{ url_for('encuesta')}}"><button class="btn btn-outline" onclick="window.location.href='encuesta.html'">Realizar la encuesta nuevamente</button></a>
+        <a href="{{ url_for('home')}}"><button class="btn btn-primary">Volver al inicio</button></a>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='script_respuestas.js') }}"></script>
+  </body>
+</html>
